@@ -1,9 +1,11 @@
 import "./Expenses.css";
 import ExpenseItemList from "./ExpenseItemList";
+import NewExpense from "./NewExpense";
 const Expense = () => {
   return (
     <div className="expenses">
-        <ExpenseItemList />
+      <NewExpense />
+      <ExpenseItemList />
     </div>
   );
 };

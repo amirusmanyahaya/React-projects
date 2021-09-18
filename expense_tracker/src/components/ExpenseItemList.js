@@ -1,4 +1,5 @@
 import ExpenseItem from "./ExpenseItem";
+import React from "react";
 
 const expenses = [
   {
@@ -27,7 +28,7 @@ const ExpenseItemList = () => {
     return (
       <ExpenseItem
         key={expenseItem.id}
-        date={expenseItem.date.toISOString()}
+        date={expenseItem.date}
         title={expenseItem.title}
         price={expenseItem.amount}
       />
